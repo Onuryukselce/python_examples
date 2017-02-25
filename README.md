@@ -1,1 +1,1 @@
-# python_examples
+Python codes examples for beginners.
