@@ -21,17 +21,20 @@ def generateLetter(x,y):
     while i < y:
             randomChar = random.choice(CHARS)
             x=x+randomChar
-            i=i+1        
-    print(x)
+            i=i+1
+    print(str(x))
+    
+    
 #--- declaration ----
-sifre=""
+passw=""
 r=0
 
 #--Main Program--
 
-sifreSayi = int(input("Kaç şifre üretilecek?: "))    
-sifreHane = int(input("Şifre kaç haneli olmalı?: "))
+passCount = int(input("How many passwords will be generated: "))    
+passSize = int(input("How many characters: "))
 
-while r < sifreSayi:
-    generateLetter(sifre,sifreHane)
+
+while r < passCount:
+    generateLetter(passw,passSize)
     r=r+1
